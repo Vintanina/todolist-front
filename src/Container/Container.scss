@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: auto;
 
 	&__box {
 		width: 60%;
@@ -11,5 +12,6 @@
 		background: white;
 		border: 1px rgb(189, 189, 189) solid;
 		border-radius: 5px;
+		overflow: auto;
 	}
 }

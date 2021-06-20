@@ -1,0 +1,36 @@
+.item {
+	width: calc(100% - 40px);
+	padding: 10px 20px 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	align-items: center;
+
+	&:hover {
+		background: rgb(245, 245, 245);
+	}
+
+	&__box {
+		display: flex;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	&__delete {
+		background: red;
+		color: white;
+		border-radius: 5px;
+		pointer-events: auto;
+		cursor: pointer;
+	}
+
+	&__check {
+		margin-right: 5px;
+		pointer-events: none;
+	}
+
+	&__content {
+		pointer-events: none;
+	}
+}
