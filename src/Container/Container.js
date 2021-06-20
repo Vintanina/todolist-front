@@ -83,7 +83,16 @@ export default function Container({ loading, play_loading, stop_loading }) {
 		);
 	});
 
-	const display = loading ? <Spinner /> : mapped_list;
+	const display =
+		todo.length === 0 ? (
+			<div className="container__empty">
+				<p className="text">Pas de tâches.</p>
+			</div>
+		) : loading ? (
+			<Spinner />
+		) : (
+			mapped_list
+		);
 
 	return (
 		<div className="container">
