@@ -23,6 +23,7 @@ export default function Nav({ play_loading, stop_loading }) {
 			play_loading();
 			todolist.add(task).then((status) => {
 				stop_loading();
+				ref_input.current.value = "";
 				if (status === 0) console.log("Request failed !");
 			});
 		}
